@@ -34,4 +34,12 @@ jobs:
         run: echo "What is your name?"
              read NAME
              echo "Hello $NAME"
-        
+    test:
+         runs-on: ubuntu-latest
+          steps:
+          - uses:actions/checkout@v3
+    deploy:
+          runs-on: ubuntu-latest
+          steps:
+          - uses:actions/checkout@v3
+          
